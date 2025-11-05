@@ -1,4 +1,5 @@
 import { Rocket } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -8,15 +9,15 @@ export default function Navbar() {
           <div className="border-2 border-black p-1 bg-white">
             <Rocket className="h-5 w-5" />
           </div>
-          <span className="font-black tracking-tight text-xl">BRUTAL STUDIO</span>
+          <Link to="/" className="font-black tracking-tight text-xl">BRUTAL STUDIO</Link>
         </div>
         <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#services" className="underline-offset-2 hover:underline">Services</a>
-          <a href="#work" className="underline-offset-2 hover:underline">Work</a>
-          <a href="#about" className="underline-offset-2 hover:underline">About</a>
-          <a href="#contact" className="underline-offset-2 hover:underline">Contact</a>
+          <Link to="/services" className="underline-offset-2 hover:underline">Services</Link>
+          <a href="/#work" className="underline-offset-2 hover:underline">Work</a>
+          <a href="/#about" className="underline-offset-2 hover:underline">About</a>
+          <a href="/#contact" className="underline-offset-2 hover:underline">Contact</a>
         </nav>
-        <a href="#contact" className="ml-4 inline-flex items-center justify-center border-2 border-black px-3 py-1.5 font-semibold bg-black text-white hover:bg-white hover:text-black transition-colors">
+        <a href="/#contact" className="ml-4 inline-flex items-center justify-center border-2 border-black px-3 py-1.5 font-semibold bg-black text-white hover:bg-white hover:text-black transition-colors">
           Start a project
         </a>
       </div>
